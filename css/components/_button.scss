@@ -1,0 +1,23 @@
+.button, .link-buton {
+  color: $white;
+  background: $primary;
+  border-radius: $basic-bradius;
+  padding: 5px 25px;
+  display: inline-block;
+  border: 0;
+  &.is-secondary {
+    background: $secondary;
+  }
+  &.is-disabled {
+    opacity: .5;
+    pointer-events: none;
+  }
+  &.is-disabled {
+    opacity: .5;
+    pointer-events: none;
+  }
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    margin-bottom: $regular-margin;
+  }
+}

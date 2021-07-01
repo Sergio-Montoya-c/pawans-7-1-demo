@@ -1,0 +1,121 @@
+:root {
+  --primary: #40B29D;
+  --secondary: #204F2F;
+  --light: #ECE1B5;
+  --light-dark: #8E8F56;
+  --bg-color: #DDE59A;
+  --white: #FFF;
+  --main-bg-color: #cdcdcd;
+}
+
+.is-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  background: var(--main-bg-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background: var(--primary);
+  width: 100%;
+  height: 150px;
+}
+
+footer {
+  width: 100%;
+  background: var(--secondary);
+  padding: 50px 15px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.button, .link-buton {
+  color: var(--white);
+  background: var(--primary);
+  border-radius: 25px;
+  padding: 5px 25px;
+  display: inline-block;
+  border: 0;
+}
+.button.is-secondary, .link-buton.is-secondary {
+  background: var(--secondary);
+}
+.button.is-disabled, .link-buton.is-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.button.is-disabled, .link-buton.is-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+@media screen and (max-width: 400px) {
+  .button, .link-buton {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.input {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 5px;
+  background: var(--white);
+}
+.input.is-secondary {
+  border: 1px solid var(--secondary);
+}
+@media screen and (max-width: 400px) {
+  .input {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+input[type=radio] + label {
+  background: var(--primary);
+  color: var(--white);
+  padding: 5px 25px;
+  border-radius: 25px;
+  display: inline-block;
+  transition: 0.2s;
+}
+input[type=radio]:checked + label {
+  transition: 0.2s;
+  background: var(--secondary);
+}
+
+.modal {
+  padding: 15px;
+  background: var(--white);
+  border-radius: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#account-page {
+  background: var(--white);
+}
+
+.halloween-theme {
+  --primary: orange;
+  --secondary: purple;
+}
+
+.xmas-theme {
+  --primary: red;
+  --secondary: green;
+}
+
+/*# sourceMappingURL=app.css.map */

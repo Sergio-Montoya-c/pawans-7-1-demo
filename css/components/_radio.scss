@@ -1,0 +1,16 @@
+input[type="radio"] {
+  + label{
+    background: $primary;
+    color: $white;
+    padding: 5px 25px;
+    border-radius: $basic-bradius;
+    display: inline-block;
+    transition: .2s;
+  }
+  &:checked {
+    + label {
+      transition: .2s;
+      background: $secondary;
+    }
+  }
+}

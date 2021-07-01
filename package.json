@@ -1,0 +1,16 @@
+{
+  "name": "pw7-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch css/main.scss:css/app.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "sass": "^1.35.1"
+  }
+}

@@ -1,0 +1,15 @@
+.input {
+  border: 1px solid $primary;
+  color: $primary;
+  border-radius: 5px;
+  background: $white;
+
+  &.is-secondary {
+    border: 1px solid $secondary;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    margin-top: $regular-margin;
+  }
+}
